@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luggage Thikana</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        * {
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+}
+        body {
+            margin: 0;
+            padding: 0;
+            /* background-color: black; */
+            background-image: url('https://www.exoticca.com/fr/blog/wp-content/uploads/2019/10/Journ%C3%A9e-mondiale-du-tourisme.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(243, 236, 236);
+        }
+
+        header::before{
+            /* background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover; */
+           /* background-image: url('https://png.pngtree.com/png-vector/20220808/ourmid/pngtree-mobile-services-for-traveling-people-flat-vector-concept-png-image_5717271.png') no-repeat center center/cover; */
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .navigation {
+            font-family: 'Bree Serif', serif;
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 50px 50px;
+        }
+        a{
+           text-decoration: none;
+            color:rgb(235, 239, 241);
+            
+        }
+
+        /* section {
+            height: 200px;
+            font-family: 'Bree Serif', serif;
+            margin: 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        } */
+
+        h1 {
+            font-size: 4rem;
+            /* margin-top: 50px; */
+            margin-bottom: 0%;
+        }
+
+        p {
+            /* text-align: center; */
+            font-size: 1.5rem;
+            margin-top: 0.5px;
+            margin-bottom: 100px;
+        }
+        /* .form-group input {
+        font-family: 'Bree Serif', serif, cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    } */
+    input {
+        font-family: 'Bree Serif', serif, cursive;
+            width: 500px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 1px; 
+             
+        }
+        /* label {
+            font-family: 'Bree Serif', serif, cursive;
+            display: block;
+            font-weight: bold;
+        } */
+    /* .btn {
+        font-family:  'Bree Serif', serif, cursive;
+        margin: 9px 9px;
+        margin-left: 220px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+       
+    } */
+
+    .btn:hover {
+        background-color: rgb(240, 235, 235);
+    } 
+        /* section::after{
+        content:"this is a content"
+    } */
+    .container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 100vh;
+    width: 1100px;  
+    margin: auto; 
+    color: #fff; 
+    padding: 0 30px;
+}
+
+
+form {
+    display: flex; 
+    flex-direction: column; 
+    /* background: #f35858;  */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQLbvWGTFQh6OGWPfkLx2xBS_OP3oZJzQubA&usqp=CAU');
+    padding: 35px; 
+    border-radius: 10px;  
+    max-width: 420px;
+}
+
+.left {
+    width: 50%; 
+    padding-right: 4rem;  
+}
+
+.left h1 {
+    font-size: 2.8rem;  
+    line-height: 1.2; 
+}
+
+.left p { 
+    font-size: .9rem; 
+    padding-top: 1rem; 
+    opacity: .9;  
+}
+.right {
+    width: 50%; 
+}
+
+input, button {
+    padding: 5px;  
+    width: 100%; 
+    border-radius: 10px; 
+}
+.btn-green {
+    background-color: #b1b6f4;
+    text-transform: uppercase; 
+    font-size: 1rem; 
+    font-weight: 500; 
+}
+.btn-green:hover{
+    background-color: #0e145b;
+}
+input {
+    margin-bottom: 20px; 
+    border: 2px solid hsl(246, 25%, 77%);
+    font-size: .9rem;
+    font-weight: 600;  
+} 
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+               
+                <li class="item"><a href="/">Home</a></li>
+                <li class="item"><a href="/about">About</a></li>
+                <li class="item"><a href="/contact">Contact us</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="left">
+            <h1>Luggage Thikana</h1>
+            <p>Enjoy the journey without worrying about luggage</p>
+        </section>
+            <section class="right">
+             <form action="" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label> 
+                    <input type="text" name="name" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="datetime-local">Drop off time:</label> 
+                    <input type="datetime-local" name="dropoff" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="datetime-local">Pick up time:</label> 
+                    <input type="datetime-local" name="pickup" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Quantity of Bag:</label> 
+                    <input type="number" name="num" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="text">Location:</label> 
+                    <input type="text" name="location" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label> 
+                    <input type="email" name="email" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Contact Number:</label> 
+                    <input type="number" name="mno" autocomplete="off" required>
+                </div>
+                <!-- <button class="btn">Book</button> -->
+                <input class="btn btn-green" type="submit" value="Book">
+            </form> 
+        </section>
+    </main>
+</body>
+
+</html>
